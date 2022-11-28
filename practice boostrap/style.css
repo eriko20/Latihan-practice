@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    background-color: darkorange;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    color: #fff;
+    display: inline-block;
+    background-color: darkorange;
+    border: 1px blue;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    
+}
+ul li a {
+    color: #fff;
+}
+ul li:hover {
+    background: red;
+    cursor: pointer;
+}
+ul li ul {
+    background: orange;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 0.5rem;
+    left: 0;
+    display: none;
+}
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    display: block;
+}
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
